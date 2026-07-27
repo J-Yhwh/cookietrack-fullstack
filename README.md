@@ -1,1 +1,4 @@
-#cookietrack.fullstack
+
+***DJANGO MIGRATIONS FROM BROWSE-TRACK-ANALYZE***
+
+

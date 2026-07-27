@@ -24,6 +24,12 @@ python3 manage.py migrate
 ```
 This directs Django to read the migration files and make the necessary changes to the database (create or add tables, columns,etc)
 
+***TIPS FOR MORE EFFECTIVE MIGRATIONS***
+* Always run ```makemigrations``` after you change a model.
+* Then run ```migrate``` to apply to those changes.
+* *Never* edit old migration files manually,unless you're confident of not making a hot mess out of the altered model.
+* Migrations are recorded in the database (```django_migrations``` table), so Django already has good memory of what has alrrady been applied.
+
 
 
 

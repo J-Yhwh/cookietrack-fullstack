@@ -16,7 +16,7 @@ Keeps the integrity of the database structures that form the classes defining th
 ```
 python3 manage.py makemigrations
 ```
-Django will scan available models, anc create a new migration file (normally in ```tracker/migrations/``` folder) which will describe changes needed int he database (e.g "Create table cookies with those columns").
+Django will scan available models, and create a new migration file (normally in ```tracker/migrations/``` folder) which will describe changes needed in the database (e.g "Create table cookies with those columns").
 
 3. Apply the migration by running the following CLI in Bash:
 ```
@@ -28,7 +28,7 @@ This directs Django to read the migration files and make the necessary changes t
 * Always run ```makemigrations``` after you change a model.
 * Then run ```migrate``` to apply to those changes.
 * *Never* edit old migration files manually,unless you're confident of not making a hot mess out of the altered model.
-* Migrations are recorded in the database (```django_migrations``` table), so Django already has good memory of what has alrrady been applied.
+* Migrations are recorded in the database (```django_migrations``` table), so Django already has good memory of what has already been applied.
 
 
 

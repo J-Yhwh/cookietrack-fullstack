@@ -18,7 +18,12 @@ python3 manage.py makemigrations
 ```
 Django will scan available models, anc create a new migration file (normally in ```tracker/migrations/``` folder) which will describe changes needed int he database (e.g "Create table cookies with those columns").
 
-3. Apply 
+3. Apply the migration by running the following CLI in Bash:
+```
+python3 manage.py migrate
+```
+This directs Django to read the migration files and make the necessary changes to the database (create or add tables, columns,etc)
+
 
 
 
